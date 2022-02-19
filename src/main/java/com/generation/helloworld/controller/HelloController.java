@@ -10,32 +10,16 @@ public class HelloController {
 
 	@GetMapping
 	public String getHello() {
-		return "Hello Turma 44!";
+		return "Hello World!";
 	}
 
-	@GetMapping("/objetivos")
-	public String objetivos() {
-		return "<b>Objetivo de aprendizagem da semana:</b>" 
-				+ "<br /> " 
-				+ "<br /> Finalizar meu terceiro módulo de inglês e conseguir me desenvolver na GeneratiOn!!";
+	@GetMapping("/bsm")
+	public String getBsm () {
+		return "Atenção aos detalhes, persistência e proatividade!";
 	}
 	
-	@GetMapping("/bsm")
-	public String habilidades() {
-			
-		return  "<b>Mentalidades</b>"
-	             + "<br /> "
-	             + "<br /> Orientação ao futuro"
-				 + "<br /> Responsabilidade pessoal"
-	             + "<br /> Mentalidade de crescimento"
-	             + "<br /> Persistência"
-	             + "<br /> "
-	             + "<br /> <b>Habilidades</b>"
-	             + "<br /> "
-	             + "<br /> Trabalho em equipe"
-	             + "<br /> Atenção aos detalhes"
-	             + "<br /> Proatividade"
-				 +  "<br /> Comunicação";
+	@GetMapping("/obj")
+	public String getObj () {
+		return "Terminar meu módulo de inglês e aprender a utilizar o Spring!";
 	}
-	 
 }
